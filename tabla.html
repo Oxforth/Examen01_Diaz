@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Tabla</title>
+    <script src="js/tabla.js"></script>
+</head>
+<body id="btbl">
+    <div id="left">
+        <select name="" id="prod">
+            <option value="Gorro">Gorro</option>
+            <option value="Polo">Polo</option>
+            <option value="Pantalón">Pantalón</option>
+        </select><br>
+        <h2>Cantidad</h2>
+        <input type="number" id="cant"><br>
+        <br><button id="btn" onclick="enviar()">ADD</button>
+    </div>
+    <div id="right">
+        <table id="data">
+            <thead>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Cantidad</th>
+                    <th>Precio por unidad</th>
+                    <th>Precio en mayor</th>
+                    <th>Precio IGV</th>
+                    <th>Eliminar</th>
+                </tr>
+            </thead>
+        </table>
+        <p id="igv"></p>
+    </div>
+</body>
+</html>
